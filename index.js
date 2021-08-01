@@ -65,6 +65,7 @@ btnAdd.addEventListener('click', () => {
 });
 
 // User click anyware outside the modal
+// If e.target is equal too addModal we need to remove the modal show class - this means when you click outside the modal it will disapear
 window.addEventListener('click', e => {
   if(e.target === addModal) {
     addModal.classList.remove('modal-show');
